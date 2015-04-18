@@ -1,16 +1,4 @@
 /**
-  * This is the RTTY driven firmware for the Pecan Pico 4 which is developed
-  * by Thomas Krahn. The initial Software will transmit one GPS position every
-  * three to five minutes with 10mW.
-  * The transmitter chip beeing used, is a Si4464, which is able to cover a
-  * frequency range from 119 MHz until 1050 MHz at 100mW max.
-  * There is also an APRS firmware made by Thomas Krahn. See https://github.com/tkrahn/pecanpico4
-  *
-  * Information  http://kt5tk.wordpress.com/2013/07/24/pecan-pico-4-serial-number-1-built-working/
-  * PCB layout   https://github.com/tkrahn/pecanpico4
-  * 
-  * Running Frequency: 8 MHz
-  * --------------------------------------------------------------------------------
   * Loop Actions
   * 
   * After the software started, it will remain in a loop doing folloing steps:
@@ -23,63 +11,11 @@
   *     - Transmitting one packet of acquired data                  10 seconds
   *                                                              = 180 seconds for one cycle
   * --------------------------------------------------------------------------------
-  * Sleeping mode
-  *
-  * In this program two interrupt methods are used. The first is used to
-  * synchronize the RTTY baud rate. Its called 50 times a second and can be
-  * intterrupted by disable_tx_interrupt and enabled by enable_tx_interrupt.
-  * The purpose of the second interrupt routine is saving energy. When its
-  * called the microcontroller will fall into Power Down Sleeping Mode and
-  * will return into active mode after 4 seconds. This method is used during
-  * single beeping in the intervals of no operation. This method is not used
-  * during double beeps to keep Serial connection to the GPS module active.
-  * The TX interrupt routine is activated during its RTTY transmission only
-  * when its necessary to activate it.
-  * --------------------------------------------------------------------------------
-  * Transmission Sentence
-  * 
-  * The software will transmit following sentence. Example for D-1:
-  * $$D-1,16,18:22:48,52.31930,13.64217,583,4,13,100041,1.104*AD28
-  * 
-  *               Format      Value      Unit
-  * Callsign      String      D-1        -
-  * Count         Integer     16         -
-  * Time          Time        18:22:48   -
-  * Latitude      Integer     52.31930   °
-  * Longitude     Integer     13.64217   °
-  * Altitude      Integer     583        Meter
-  * Satellites    Integer     4          -
-  * Temperature   Integer     13         Celcius
-  * Pressure      Integer     100041     Pascal
-  * Voltage       Integer     1.104      Volt
-  * CRC           -           AD28       -
-  * --------------------------------------------------------------------------------
-  * Known issues
-  * 
-  * The Pecan has an error depending on its design. Sometimes it happens, Serial
-  * transmissions between GPS and ATMega will not work. The ATMega will get broken
-  * data indicated by the CRC Check. In this case, the tracker retries to get
-  * the Position or Time data up to 10 times. In order to get the data again,
-  * Double Beeps sometimes have a delay.
-  * 
-  * The GPS Module MAX6 and MAX7 have a random hopping caused by switching it off
-  * in the sleep intervals. This can be avoided by let it switched on for the whole
-  * time, which is not recommended, because its the part on the PCB consuming the
-  * most power.
-  * Most of the incorrect decoded GPS positions are showing huge altitude hoppings.
-  * The error will be detected and eliminated partially by cross checking the GPS
-  * altitude with the pressure altitude.
-  *
-  * GPS Reset Pin consumes 18.3mA current at 1.5V when set high. In order to save
-  * energy it will be set to low when GPS is switched off.
-  * --------------------------------------------------------------------------------
-  * @file PecanAva.ino
-  * @author Sven Steudte
-  * @author Marius Schiffer
+  * @file Communication.ino
+  * @author Kartikye Mittal
   * 
   * Some other authors created parts of the code before.
   * @author Anthony Stirk   Interrupt functions
-  * @author Jon Sowman      GPS Decoding
   * @author Thomas Krahn    First version, Interrupt functions
   */
 
@@ -92,7 +28,6 @@
 #include <avr/sleep.h>
 #include <math.h>
 
-//#include "sensors.h"
 #include "Si446x.h"
 
 //Tracker Configuration
