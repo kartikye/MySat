@@ -1,4 +1,9 @@
-/* trackuino copyright (C) 2010  EA5HAV Javi
+//
+//
+// Code modified by Arko for the Si446x
+// Code based on KT5TK's Si446x
+//
+/* pecanpico2 copyright (C) 2013  KT5TK
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -15,16 +20,26 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#ifndef __SENSORS_H__
-#define __SENSORS_H__
+#ifndef __RADIO_SI446X_H__
+#define __RADIO_SI446X_H__
 
-void sensors_setup();
-unsigned long sensors_aref();
-int sensors_lm50();
-//void bmp085Calibration(void);
-unsigned long bmp085ReadUP(void);
-unsigned int bmp085ReadUT(void);
-short bmp085GetTemperature(unsigned int ut);
-long bmp085GetPressure(unsigned long up);
-long getUBatt();
+  void radioStartup();
+  void ptt_on();
+  void ptt_off();
+  void set_freq(unsigned long freq);
+  int get_powerlevel();
+  
+  void SendCmdReceiveAnswer(int byteCountTx, int byteCountRx, const char* pData);
+  void resetradio(void);
+  void setModem(void);
+  void start_tx(void);
+  void stop_tx(void);
+  void tune_tx(void);
+  void setFrequency(unsigned long freq); 
+
+  #define SCKpin  13   // SCK
+  #define SSpin   10    // SS
+  #define MOSIpin 11   // MOSI
+  #define MISOpin 12   // MISO
+
 #endif
