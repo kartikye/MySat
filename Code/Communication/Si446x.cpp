@@ -75,9 +75,10 @@ void Si446x::SendCmdReceiveAnswer(int byteCountTx, int byteCountRx, const char* 
     
     /* There was a bug in A1 hardware that will not handle 1 byte commands. 
        It was supposedly fixed in B0 but the fix didn't make it at the last minute, so here we go again */
+    Serial.println("Send command recv answ");
     if (byteCountTx == 1)
         byteCountTx++;
-    
+   
     digitalWrite(SSpin,LOW);
     char answer;   
       
@@ -94,11 +95,12 @@ void Si446x::SendCmdReceiveAnswer(int byteCountTx, int byteCountRx, const char* 
     digitalWrite(SSpin,LOW);   
     
     int reply = 0x00;
+    Serial.println(reply,HEX);
     while (reply != 0xFF)
-    {       
+    {      
        reply = SPI.transfer(0x44);
-       //Serial.print(reply,HEX);
-       //Serial.print(" ");
+       Serial.print(reply,HEX);
+       Serial.print(" ");
        if (reply != 0xFF)
        {
          digitalWrite(SSpin,HIGH);
@@ -106,6 +108,7 @@ void Si446x::SendCmdReceiveAnswer(int byteCountTx, int byteCountRx, const char* 
          digitalWrite(SSpin,LOW);   
        }
     }
+    Serial.println(reply,HEX);
     
 //    Serial.println();
     
@@ -120,8 +123,8 @@ void Si446x::SendCmdReceiveAnswer(int byteCountTx, int byteCountRx, const char* 
        
     digitalWrite(SSpin,HIGH);
 //    Serial.println();
-//    delay(500); // Wait half a second to prevent Serial buffer overflow
-    delay(50);   //make sure spi communication has finished
+//    delay(1000); // Wait half a second to prevent Serial buffer overflow
+    delay(100);   //make sure spi communication has finished
 }
 
 
@@ -204,48 +207,50 @@ void Si446x::init() {
   digitalWrite(RADIO_SDN_PIN, HIGH);  // active high shutdown = reset
   delay(600);
   digitalWrite(RADIO_SDN_PIN, LOW);   // booting
-  //Serial.println("Radio is powered up"); 
+  Serial.println("Radio is powered up"); 
 
   // Start talking to the Si446X radio chip
 
   const char PART_INFO_command[] = {0x01}; // Part Info
-  SendCmdReceiveAnswer(1, 9, PART_INFO_command);
-  //Serial.println("Part info was checked");
-
+  //SendCmdReceiveAnswer(1, 9, PART_INFO_command);
+  Serial.println("Part info was checked");
+  
 //divide VCXO_FREQ into its bytes; MSB first  
   unsigned int x3 = VCXO_FREQ / 0x1000000;
   unsigned int x2 = (VCXO_FREQ - x3 * 0x1000000) / 0x10000;
   unsigned int x1 = (VCXO_FREQ - x3 * 0x1000000 - x2 * 0x10000) / 0x100;
   unsigned int x0 = (VCXO_FREQ - x3 * 0x1000000 - x2 * 0x10000 - x1 * 0x100); 
+  Serial.println("Test 1");
 
 //POWER_UP
   const char init_command[] = {0x02, 0x01, 0x01, x3, x2, x1, x0};// no patch, boot main app. img, FREQ_VCXO, return 1 byte
+  Serial.println("Test 2");
   SendCmdReceiveAnswer(7, 1 ,init_command); 
 
-  //Serial.println("Radio booted"); 
+  Serial.println("Radio booted"); 
 
   const char get_int_status_command[] = {0x20, 0x00, 0x00, 0x00}; //  Clear all pending interrupts and get the interrupt status back
   SendCmdReceiveAnswer(4, 9, get_int_status_command);
 
 
-  //Serial.println("Radio ready");
+  Serial.println("Radio ready");
  
-  const char gpio_pin_cfg_command[] = {0x13, 0x04, 0x02, 0x02, 0x02, 0x08, 0x11, 0x00}; //  Set GPIO0 as input, all other GPIOs LOW; Link NIRQ to CTS; Link SDO to MISO; Max drive strength
-  SendCmdReceiveAnswer(8, 8, gpio_pin_cfg_command);
+  const char gpio_pin_cfg_command[] = {0x13,0x04, 0x02, 0x02, 0x02, 0x08, 0x11, 0x00}; //  Set GPIO0 as input, all other GPIOs LOW; Link NIRQ to CTS; Link SDO to MISO; Max drive strength
+  SendCmdReceiveAnswer(6, 8, gpio_pin_cfg_command);
 
-  //Serial.println("LEDs should be switched off at this point");
+  Serial.println("LEDs should be switched off at this point");
   
   sendFrequencyToSi446x(active_freq);
-  //Serial.println("Frequency set");  
+  Serial.println("Frequency set");  
 
  
   setModem(); 
-  //Serial.println("CW mode set");  
+  Serial.println("CW mode set");  
   
   setDeviation(active_shift);
   
   tune_tx();
-  //Serial.println("TX tune");  
+  Serial.println("TX tune");  
   
   setHighTone();
 
@@ -253,13 +258,17 @@ void Si446x::init() {
 }
 
 void Si446x::initSPI() {  // Is this really needed for Si446x?
+        Serial.println("Begin SPI");
 	SPI.begin();
 	// Si446x seems to speak spi mode 0
+        Serial.println("Set data mode");
 	SPI.setDataMode(SPI_MODE0);
 	// Setting clock speed to 8mhz, as 10 is the max for the rfm22
-	SPI.setClockDivider(SPI_CLOCK_DIV2);
+	Serial.println("Set Clock");
+        SPI.setClockDivider(SPI_CLOCK_DIV2);
 	// MSB first
 	//SPI.setBitOrder(MSBFIRST);
+        Serial.println("SPI finished");
 }
 
 // Configuration parameter functions ---------------------------------------
@@ -383,3 +392,4 @@ void Si446x::setLowTone()
   //analogWrite(VCXO_CONTROL_PIN, 124);
   digitalWrite(GPIO0_PIN, LOW);
 }
+

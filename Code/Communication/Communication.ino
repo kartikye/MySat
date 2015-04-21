@@ -37,7 +37,7 @@
 #define STOPBITS 2                      //Either 1 or 2
 #define TXDELAY 25                      //Transmit-Delay in bits
 #define RTTY_BAUD 50                    //Baud rate (600 max)
-#define RADIO_FREQUENCY 145.300         //Transmit frequency in MHz (119 - 1050 Mhz)
+#define RADIO_FREQUENCY 435.300         //Transmit frequency in MHz (119 - 1050 Mhz)
 #define RTTY_SHIFT 440                  //RTTY shift in Hz (varies, differs also on 2m and 70cm)
                                         //490 = 450 Hz @ 434.500 MHz
                                         //440 = 425 Hz @ 145.300 MHz
@@ -76,12 +76,15 @@ void setup() {
   //Set Pin mode
   pinMode(STATUS_LED, OUTPUT);          //Status LED (Green)
   pinMode(RADIO_SDN, OUTPUT);           //Radio
-  
+  blinkled(2);
   Serial.begin(9600);                   //Start Serial
-    
+  Serial.println("Starting Radio");  
   digitalWrite(RADIO_SDN, HIGH);        //Power on Radio
-  setupRadio();                         //Setup radio
-  
+  Serial.println("Radio Setup");
+  setupRadio();                //Setup radio
+  Serial.println("Radio done");
+  blinkled(2);
+  Serial.println("Watchdog");
   setup_watchdog(8);                    //Setup watchdog (configure 4 sec interrupt)
   
   initialise_interrupt();               //Initialize interrupt
@@ -157,6 +160,7 @@ void power_save() {
   * @param ii Interval Mode
   */
 void setup_watchdog(int ii) {
+  blinkled(2);
   byte bb;
   int ww;
   if (ii > 9 ) ii=9;
@@ -170,6 +174,8 @@ void setup_watchdog(int ii) {
   //Set new watchdog timeout value
   WDTCSR = bb;
   WDTCSR |= _BV(WDIE);
+  blinkled(2);
+  Serial.println("Watchdog done");
 }
 
 
@@ -185,7 +191,7 @@ ISR(WDT_vect) {}
 void loop() {
   //Disable TX interrupt routine
   disable_tx_interrupt();
-  
+  blinkled(5);
   //Single beep on radio
   for(int i=0; i<38; i++) {
     //Beep
@@ -218,7 +224,7 @@ void loop() {
   //Delay
   delay(3300);
   
-  //Forming Transmission String
+  /*Forming Transmission String
   sprintf(
     txstring,
     "Hello"
@@ -238,12 +244,12 @@ void loop() {
   sleep_enable();
   
   //Wait until data is sent by TX interrupt routine
-  while(txstatus != 0)
-    sleep_mode();
+  //while(txstatus != 0)
+  //  sleep_mode();
 	
-  sleep_disable();
-  disable_tx_interrupt();
-  power_save();
+  //sleep_disable();
+  //disable_tx_interrupt();
+  //power_save();*/
 }
 
 
@@ -311,11 +317,20 @@ ISR(TIMER1_COMPA_vect) {
   * transmission power.
   */
 void setupRadio() {
+  blinkled(2);
+  Serial.println("Begin SPI");
   radio.initSPI();
+  blinkled(2);
+  Serial.println("Setting Frequency");
   radio.setFrequency(RADIO_FREQUENCY);
+  Serial.println("Setting RTTY Shift");
   radio.setShift(RTTY_SHIFT);
+  Serial.println("Setting power level");
   radio.setPowerLevel(RADIO_POWER);
+  Serial.println("Radio Init");
   radio.init();
+  Serial.println("Radio Setup");
+  
 }
 
 /**
