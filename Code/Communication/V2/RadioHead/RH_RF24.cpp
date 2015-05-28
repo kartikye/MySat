@@ -173,7 +173,11 @@ bool RH_RF24::init()
     uint8_t syncwords[] = { 0x2d, 0xd4 };
     setSyncWords(syncwords, sizeof(syncwords)); // Same as RF22's
     // Reasonably fast and reliable default speed and modulation
+   
+
     setModemConfig(GFSK_Rb5Fd10);
+   
+
     // 3 would be sufficient, but this is the same as RF22's
     // actualy, 4 seems to work much better for some modulations
     setPreambleLength(4);

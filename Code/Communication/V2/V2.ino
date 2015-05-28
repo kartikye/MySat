@@ -21,6 +21,7 @@ void setup()
   // Defaults after init are 434.0MHz, modulation GFSK_Rb5Fd10, power 0x10
   if (!rf24.setFrequency(435.0))
     Serial.println("setFrequency failed");
+    pinMode(8 ,OUTPUT);
 }
 
 
@@ -29,9 +30,11 @@ void loop()
   Serial.println("Sending to rf24_server");
   // Send a message to rf24_server
   uint8_t data[] = "Hello World!";
-  rf24.send(data, sizeof(data));
+  //rf24.send(data, sizeof(data));
   
-  rf24.waitPacketSent();
+  //rf24.waitPacketSent();
+  digitalWrite(8 ,LOW);
+  digitalWrite(8,HIGH);
   // Now wait for a reply
   uint8_t buf[RH_RF24_MAX_MESSAGE_LEN];
   uint8_t len = sizeof(buf);
