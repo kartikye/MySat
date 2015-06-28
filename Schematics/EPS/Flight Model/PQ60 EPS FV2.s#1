@@ -7582,6 +7582,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="L4" library="Panasonic-ELL" deviceset="ELL" device="-3FU" technology="3FU2R2N" value=" 2.2UH "/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="SWITCH" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7616,8 +7617,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="GND14" gate="1" x="7.62" y="25.4" rot="MR90"/>
 <instance part="GND15" gate="1" x="7.62" y="78.74" rot="MR90"/>
 <instance part="GND16" gate="1" x="7.62" y="-30.48" rot="MR90"/>
-<instance part="BATTERY" gate="G$1" x="200.66" y="17.78"/>
-<instance part="GND18" gate="1" x="190.5" y="17.78" rot="MR90"/>
+<instance part="BATTERY" gate="G$1" x="220.98" y="17.78"/>
+<instance part="GND18" gate="1" x="208.28" y="17.78" rot="MR90"/>
 <instance part="C4" gate="G$1" x="81.28" y="73.66"/>
 <instance part="C5" gate="G$1" x="81.28" y="20.32"/>
 <instance part="C6" gate="G$1" x="81.28" y="-35.56"/>
@@ -7644,6 +7645,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="GND28" gate="1" x="35.56" y="-114.3" rot="MR90"/>
 <instance part="L4" gate="A" x="15.24" y="-104.14"/>
 <instance part="GND29" gate="1" x="40.64" y="-144.78" rot="MR90"/>
+<instance part="SWITCH" gate="G$1" x="198.12" y="2.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7866,7 +7868,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <segment>
 <pinref part="BATTERY" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="193.04" y1="17.78" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="17.78" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -8123,10 +8125,11 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <junction x="165.1" y="20.32"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="30.48" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="BATTERY" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="20.32" x2="198.12" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="20.32" x2="187.96" y2="30.48" width="0.1524" layer="91"/>
 <label x="200.66" y="30.48" size="1.778" layer="95"/>
+<pinref part="SWITCH" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="20.32" x2="198.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="20.32" x2="198.12" y2="5.08" width="0.1524" layer="91"/>
 <junction x="187.96" y="20.32"/>
 </segment>
 <segment>
@@ -8679,6 +8682,14 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="15.24" y1="-104.14" x2="15.24" y2="-106.68" width="0.1524" layer="91"/>
 <pinref part="U6" gate="A" pin="L2"/>
 <wire x1="15.24" y1="-106.68" x2="43.18" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SWITCH" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="5.08" x2="200.66" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="20.32" x2="218.44" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
