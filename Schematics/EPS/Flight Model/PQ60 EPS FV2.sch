@@ -7412,136 +7412,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="INA3221">
-<packages>
-<package name="QFN65P400X400X80-17N">
-<smd name="1" x="-1.8542" y="0.9652" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="2" x="-1.8542" y="0.3302" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="3" x="-1.8542" y="-0.3302" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="4" x="-1.8542" y="-0.9652" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="5" x="-0.9652" y="-1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="6" x="-0.3302" y="-1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="7" x="0.3302" y="-1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="8" x="0.9652" y="-1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="9" x="1.8542" y="-0.9652" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="10" x="1.8542" y="-0.3302" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="11" x="1.8542" y="0.3302" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="12" x="1.8542" y="0.9652" dx="0.3048" dy="0.9144" layer="1" rot="R270"/>
-<smd name="13" x="0.9652" y="1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="14" x="0.3302" y="1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="15" x="-0.3302" y="1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="16" x="-0.9652" y="1.8542" dx="0.3048" dy="0.9144" layer="1" rot="R180"/>
-<smd name="17" x="0" y="0" dx="2.2606" dy="2.2606" layer="1"/>
-<wire x1="2.8194" y1="-0.127" x2="2.8194" y2="-0.508" width="0.1524" layer="49"/>
-<wire x1="2.8194" y1="-0.508" x2="2.5654" y2="-0.508" width="0.1524" layer="49"/>
-<wire x1="2.5654" y1="-0.508" x2="2.5654" y2="-0.127" width="0.1524" layer="49"/>
-<wire x1="2.5654" y1="-2.5654" x2="-2.5654" y2="-2.5654" width="0.1524" layer="39"/>
-<wire x1="-2.5654" y1="-2.5654" x2="-2.5654" y2="2.5654" width="0.1524" layer="39"/>
-<wire x1="-2.5654" y1="2.5654" x2="2.5654" y2="2.5654" width="0.1524" layer="39"/>
-<wire x1="2.5654" y1="2.5654" x2="2.5654" y2="-2.5654" width="0.1524" layer="39"/>
-<wire x1="2.0066" y1="1.4478" x2="2.0066" y2="2.0066" width="0.1524" layer="21"/>
-<wire x1="1.4478" y1="-2.0066" x2="2.0066" y2="-2.0066" width="0.1524" layer="21"/>
-<wire x1="-1.4478" y1="2.0066" x2="-2.0066" y2="2.0066" width="0.1524" layer="21"/>
-<wire x1="-2.0066" y1="-2.0066" x2="-1.4478" y2="-2.0066" width="0.1524" layer="21"/>
-<wire x1="2.0066" y1="-2.0066" x2="2.0066" y2="-1.4478" width="0.1524" layer="21"/>
-<wire x1="2.0066" y1="2.0066" x2="1.4478" y2="2.0066" width="0.1524" layer="21"/>
-<wire x1="-2.0066" y1="2.0066" x2="-2.0066" y2="1.4478" width="0.1524" layer="21"/>
-<wire x1="-2.0066" y1="-1.4478" x2="-2.0066" y2="-2.0066" width="0.1524" layer="21"/>
-<text x="-3.5052" y="1.0414" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<wire x1="-2.0066" y1="0.7366" x2="-0.7366" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="1.1176" y1="2.0066" x2="0.8128" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="0.4826" y1="2.0066" x2="0.1778" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="-0.1778" y1="2.0066" x2="-0.4826" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="-0.8128" y1="2.0066" x2="-1.1176" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="1.1176" x2="-2.0066" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="0.4826" x2="-2.0066" y2="0.1778" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="-0.1778" x2="-2.0066" y2="-0.4826" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="-0.8128" x2="-2.0066" y2="-1.1176" width="0.1524" layer="51"/>
-<wire x1="-1.1176" y1="-2.0066" x2="-0.8128" y2="-2.0066" width="0.1524" layer="51"/>
-<wire x1="-0.4826" y1="-2.0066" x2="-0.1778" y2="-2.0066" width="0.1524" layer="51"/>
-<wire x1="0.1778" y1="-2.0066" x2="0.4826" y2="-2.0066" width="0.1524" layer="51"/>
-<wire x1="0.8128" y1="-2.0066" x2="1.1176" y2="-2.0066" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="-1.1176" x2="2.0066" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="-0.4826" x2="2.0066" y2="-0.1778" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="0.1778" x2="2.0066" y2="0.4826" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="0.8128" x2="2.0066" y2="1.1176" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="-2.0066" x2="2.0066" y2="-2.0066" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="-2.0066" x2="2.0066" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="2.0066" x2="-2.0066" y2="2.0066" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="2.0066" x2="-2.0066" y2="-2.0066" width="0.1524" layer="51"/>
-<text x="-3.5052" y="1.0414" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-4.699" y="2.7432" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.6134" y="-4.8514" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="INA3221AIRGVT">
-<pin name="IN-1" x="-20.32" y="10.16" length="middle" direction="in"/>
-<pin name="IN+1" x="-20.32" y="7.62" length="middle" direction="in"/>
-<pin name="IN-2" x="-20.32" y="5.08" length="middle" direction="in"/>
-<pin name="IN+2" x="-20.32" y="2.54" length="middle" direction="in"/>
-<pin name="IN-3" x="-20.32" y="0" length="middle" direction="in"/>
-<pin name="IN+3" x="-20.32" y="-2.54" length="middle" direction="in"/>
-<pin name="VPU" x="-20.32" y="-7.62" length="middle" direction="pwr"/>
-<pin name="VS" x="-20.32" y="-10.16" length="middle" direction="pwr"/>
-<pin name="GND" x="-20.32" y="-12.7" length="middle" direction="pas"/>
-<pin name="EPAD" x="-20.32" y="-15.24" length="middle" direction="pas"/>
-<pin name="SDA" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="CRITICAL" x="20.32" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="PV" x="20.32" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="TC" x="20.32" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="A0" x="20.32" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="SCL" x="20.32" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="WARNING" x="20.32" y="-12.7" length="middle" direction="out" rot="R180"/>
-<wire x1="-15.24" y1="15.24" x2="-15.24" y2="-20.32" width="0.4064" layer="94"/>
-<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.4064" layer="94"/>
-<wire x1="15.24" y1="-20.32" x2="15.24" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="-15.24" y2="15.24" width="0.4064" layer="94"/>
-<text x="-4.7244" y="16.8148" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.3594" y="-23.7236" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="INA3221AIRGVT" prefix="U">
-<description>MONITOR, 3CH, HS, 0V TO 26VSENSE, 16QFN</description>
-<gates>
-<gate name="A" symbol="INA3221AIRGVT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN65P400X400X80-17N">
-<connects>
-<connect gate="A" pin="A0" pad="5"/>
-<connect gate="A" pin="CRITICAL" pad="9"/>
-<connect gate="A" pin="EPAD" pad="17"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="IN+1" pad="12"/>
-<connect gate="A" pin="IN+2" pad="15"/>
-<connect gate="A" pin="IN+3" pad="2"/>
-<connect gate="A" pin="IN-1" pad="11"/>
-<connect gate="A" pin="IN-2" pad="14"/>
-<connect gate="A" pin="IN-3" pad="1"/>
-<connect gate="A" pin="PV" pad="10"/>
-<connect gate="A" pin="SCL" pad="6"/>
-<connect gate="A" pin="SDA" pad="7"/>
-<connect gate="A" pin="TC" pad="13"/>
-<connect gate="A" pin="VPU" pad="16"/>
-<connect gate="A" pin="VS" pad="4"/>
-<connect gate="A" pin="WARNING" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="INA3221AIRGVT" constant="no"/>
-<attribute name="OC_FARNELL" value="2144251 " constant="no"/>
-<attribute name="OC_NEWARK" value="27W5216" constant="no"/>
-<attribute name="PACKAGE" value="16QFN" constant="no"/>
-<attribute name="SUPPLIER" value="TEXAS INSTRUMENTS" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PQ60">
 <description>Generated from &lt;b&gt;Template_V0.1.brd&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
@@ -8055,6 +7925,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
@@ -8118,10 +7989,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
-<part name="U10" library="INA3221" deviceset="INA3221AIRGVT" device=""/>
-<part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="C11" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="C12" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
@@ -8225,10 +8092,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="R6" gate="G$1" x="535.94" y="360.68" rot="R180"/>
 <instance part="SJ1" gate="1" x="480.06" y="363.22"/>
 <instance part="SJ2" gate="1" x="480.06" y="403.86"/>
-<instance part="U10" gate="A" x="149.86" y="294.64"/>
-<instance part="GND32" gate="1" x="124.46" y="281.94" rot="MR90"/>
-<instance part="R7" gate="G$1" x="185.42" y="256.54" rot="R90"/>
-<instance part="R8" gate="G$1" x="177.8" y="256.54" rot="R90"/>
 <instance part="C11" gate="G$1" x="266.7" y="414.02" rot="R180"/>
 <instance part="GND33" gate="1" x="266.7" y="421.64" rot="MR180"/>
 <instance part="C12" gate="G$1" x="266.7" y="360.68" rot="R180"/>
@@ -8477,14 +8340,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="485.14" y1="347.98" x2="485.14" y2="353.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U10" gate="A" pin="GND"/>
-<wire x1="129.54" y1="281.94" x2="127" y2="281.94" width="0.1524" layer="91"/>
-<pinref part="GND32" gate="1" pin="GND"/>
-<pinref part="U10" gate="A" pin="EPAD"/>
-<wire x1="129.54" y1="279.4" x2="129.54" y2="281.94" width="0.1524" layer="91"/>
-<junction x="129.54" y="281.94"/>
-</segment>
-<segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 </segment>
@@ -8585,7 +8440,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="96.52" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="93.98" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="86.36" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
@@ -8599,31 +8453,45 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="53.34" y1="45.72" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="43.18" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="33.02" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <junction x="53.34" y="33.02"/>
-<wire x1="58.42" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
-<junction x="53.34" y="45.72"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW3@2"/>
 <wire x1="58.42" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <junction x="53.34" y="43.18"/>
-<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<junction x="53.34" y="55.88"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW3@1"/>
+<wire x1="58.42" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<junction x="53.34" y="45.72"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW2@2"/>
 <wire x1="58.42" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 <junction x="53.34" y="53.34"/>
-<wire x1="58.42" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<junction x="53.34" y="66.04"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW2@1"/>
+<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<junction x="53.34" y="55.88"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW1@2"/>
 <wire x1="58.42" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <junction x="53.34" y="63.5"/>
-<wire x1="58.42" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<junction x="53.34" y="76.2"/>
+<pinref part="U$3" gate="G$1" pin="RTN_BATV_SW1@1"/>
+<wire x1="58.42" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<junction x="53.34" y="66.04"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW3@2"/>
 <wire x1="58.42" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
 <junction x="53.34" y="73.66"/>
-<wire x1="58.42" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<junction x="53.34" y="86.36"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW3@1"/>
+<wire x1="58.42" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<junction x="53.34" y="76.2"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW2@2"/>
 <wire x1="58.42" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <junction x="53.34" y="83.82"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW2@1"/>
+<wire x1="58.42" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
+<junction x="53.34" y="86.36"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW1@2"/>
 <wire x1="58.42" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
 <junction x="53.34" y="93.98"/>
-<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="U$3" gate="G$1" pin="RTN_+3V3_SW1@1"/>
+<wire x1="58.42" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -8687,21 +8555,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="U8" gate="A" pin="OUT"/>
 <wire x1="530.86" y1="368.3" x2="535.94" y2="368.3" width="0.1524" layer="91"/>
 <label x="535.94" y="368.3" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U10" gate="A" pin="VS"/>
-<wire x1="114.3" y1="284.48" x2="129.54" y2="284.48" width="0.1524" layer="91"/>
-<label x="109.22" y="284.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="251.46" x2="177.8" y2="243.84" width="0.1524" layer="91"/>
-<label x="177.8" y="241.3" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="251.46" x2="185.42" y2="243.84" width="0.1524" layer="91"/>
-<label x="185.42" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="+3V3@1"/>
@@ -9063,48 +8916,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="485.14" y1="403.86" x2="495.3" y2="403.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN1-" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN-1"/>
-<wire x1="129.54" y1="304.8" x2="124.46" y2="304.8" width="0.1524" layer="91"/>
-<label x="119.38" y="304.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN1+" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN+1"/>
-<wire x1="129.54" y1="302.26" x2="124.46" y2="302.26" width="0.1524" layer="91"/>
-<label x="119.38" y="302.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN2-" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN-2"/>
-<wire x1="129.54" y1="299.72" x2="124.46" y2="299.72" width="0.1524" layer="91"/>
-<label x="119.38" y="299.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN2+" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN+2"/>
-<wire x1="129.54" y1="297.18" x2="124.46" y2="297.18" width="0.1524" layer="91"/>
-<label x="119.38" y="297.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN3-" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN-3"/>
-<wire x1="129.54" y1="294.64" x2="124.46" y2="294.64" width="0.1524" layer="91"/>
-<label x="119.38" y="294.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VIN3+" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="IN+3"/>
-<wire x1="129.54" y1="292.1" x2="124.46" y2="292.1" width="0.1524" layer="91"/>
-<label x="119.38" y="292.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="LDO"/>
@@ -9222,16 +9033,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="58.42" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
 <label x="43.18" y="30.48" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U10" gate="A" pin="SCL"/>
-<wire x1="170.18" y1="284.48" x2="177.8" y2="284.48" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="284.48" x2="177.8" y2="261.62" width="0.1524" layer="91"/>
-<label x="177.8" y="284.48" size="1.778" layer="95"/>
-<pinref part="U10" gate="A" pin="A0"/>
-<wire x1="170.18" y1="287.02" x2="170.18" y2="284.48" width="0.1524" layer="91"/>
-<junction x="170.18" y="284.48"/>
-</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -9243,13 +9044,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="U$3" gate="G$1" pin="SDA"/>
 <wire x1="58.42" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <label x="43.18" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U10" gate="A" pin="SDA"/>
-<label x="175.26" y="304.8" size="1.778" layer="95"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="304.8" x2="185.42" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="304.8" x2="185.42" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3_SW1" class="0">
@@ -9266,10 +9060,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <wire x1="58.42" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="101.6" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="101.6" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
 <junction x="50.8" y="101.6"/>
 <label x="35.56" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="+3V3_SW1@2"/>
+<wire x1="50.8" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3_SW2" class="0">
