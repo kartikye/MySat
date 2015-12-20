@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -30,7 +30,7 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -3729,6 +3729,33 @@ EPS FV2</text>
 <text x="23.9" y="38.7" size="1" layer="22" font="vector" rot="MR0">4</text>
 <text x="26.4" y="38.7" size="1" layer="22" font="vector" rot="MR0">5</text>
 <text x="31.7" y="38.7" size="1" layer="22" font="vector" rot="MR0">6</text>
+<wire x1="5.7" y1="21.5" x2="9.7" y2="21.5" width="0.15" layer="51"/>
+<wire x1="9.7" y1="21.5" x2="9.7" y2="19.5" width="0.15" layer="51"/>
+<wire x1="9.7" y1="19.5" x2="5.7" y2="19.5" width="0.15" layer="51"/>
+<wire x1="5.7" y1="19.5" x2="5.7" y2="21.5" width="0.15" layer="51"/>
+<wire x1="9.7" y1="21.5" x2="13.7" y2="21.5" width="0.15" layer="51"/>
+<wire x1="13.7" y1="21.5" x2="13.7" y2="19.5" width="0.15" layer="51"/>
+<wire x1="13.7" y1="19.5" x2="9.7" y2="19.5" width="0.15" layer="51"/>
+<wire x1="7.7" y1="19.3" x2="11.7" y2="19.3" width="0.15" layer="51"/>
+<wire x1="11.7" y1="19.3" x2="11.7" y2="17.3" width="0.15" layer="51"/>
+<wire x1="11.7" y1="17.3" x2="7.7" y2="17.3" width="0.15" layer="51"/>
+<wire x1="7.7" y1="17.3" x2="7.7" y2="19.3" width="0.15" layer="51"/>
+<wire x1="5.7" y1="26.7" x2="7.7" y2="26.7" width="0.15" layer="51"/>
+<wire x1="7.7" y1="26.7" x2="7.7" y2="22.7" width="0.15" layer="51"/>
+<wire x1="7.7" y1="22.7" x2="5.7" y2="22.7" width="0.15" layer="51"/>
+<wire x1="5.7" y1="22.7" x2="5.7" y2="26.7" width="0.15" layer="51"/>
+<wire x1="8.2" y1="26.2" x2="11.2" y2="26.2" width="0.15" layer="51"/>
+<wire x1="11.2" y1="26.2" x2="11.2" y2="23.2" width="0.15" layer="51"/>
+<wire x1="11.2" y1="23.2" x2="8.2" y2="23.2" width="0.15" layer="51"/>
+<wire x1="8.2" y1="23.2" x2="8.2" y2="26.2" width="0.15" layer="51"/>
+<wire x1="11.7" y1="26.7" x2="13.7" y2="26.7" width="0.15" layer="51"/>
+<wire x1="13.7" y1="26.7" x2="13.7" y2="22.7" width="0.15" layer="51"/>
+<wire x1="13.7" y1="22.7" x2="11.7" y2="22.7" width="0.15" layer="51"/>
+<wire x1="11.7" y1="22.7" x2="11.7" y2="26.7" width="0.15" layer="51"/>
+<wire x1="7.7" y1="29.4" x2="11.7" y2="29.4" width="0.15" layer="51"/>
+<wire x1="11.7" y1="29.4" x2="11.7" y2="27.4" width="0.15" layer="51"/>
+<wire x1="11.7" y1="27.4" x2="7.7" y2="27.4" width="0.15" layer="51"/>
+<wire x1="7.7" y1="27.4" x2="7.7" y2="29.4" width="0.15" layer="51"/>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -4478,7 +4505,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BATTERY" library="adafruit" package="1X03" value="" x="40.2" y="10" smashed="yes" rot="R90">
+<element name="BATTERYPLUG" library="adafruit" package="1X03" value="" x="40.2" y="10" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.7712" y="14.3138" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="43.375" y="6.19" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -4794,7 +4821,6 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="P$51"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
-<contactref element="U7" pad="1"/>
 <contactref element="SWITCH" pad="2"/>
 <wire x1="23.1" y1="4.775" x2="23.7" y2="4.775" width="0.254" layer="1"/>
 <wire x1="23.7" y1="4.775" x2="24.3" y2="4.775" width="0.254" layer="1"/>
@@ -4802,7 +4828,6 @@ design rules under a new name.</description>
 <wire x1="24.3" y1="4.15" x2="24.9" y2="4.15" width="0.254" layer="16"/>
 <wire x1="24.3" y1="4.15" x2="23.7" y2="4.15" width="0.254" layer="16"/>
 <wire x1="23.7" y1="4.15" x2="23.1" y2="4.15" width="0.254" layer="16"/>
-<wire x1="24.0602" y1="15.4046" x2="24.0602" y2="14.1398" width="0.254" layer="1"/>
 <wire x1="28.775" y1="12.475" x2="31.5" y2="9.75" width="0.254" layer="1"/>
 <wire x1="31.5" y1="9.75" x2="31.5" y2="1.4" width="0.254" layer="1"/>
 <wire x1="31.5" y1="1.4" x2="30.65" y2="0.55" width="0.254" layer="1"/>
@@ -4844,6 +4869,14 @@ design rules under a new name.</description>
 <wire x1="25.4" y1="13.5" x2="25.8" y2="13.9" width="0.254" layer="1"/>
 <wire x1="25.35" y1="0.55" x2="24.9" y2="1" width="0.254" layer="1"/>
 <wire x1="24.9" y1="1" x2="24.9" y2="6.5" width="0.254" layer="1"/>
+<contactref element="U7" pad="6"/>
+<contactref element="R5" pad="1"/>
+<wire x1="24.0602" y1="14.1398" x2="20.5" y2="14.1398" width="0.15" layer="1"/>
+<wire x1="20.5" y1="14.1398" x2="20.5" y2="18.2" width="0.15" layer="1"/>
+<wire x1="20.5" y1="18.2" x2="24.0602" y2="18.2" width="0.15" layer="1"/>
+<wire x1="24.0602" y1="18.2" x2="24.0602" y2="17.9954" width="0.15" layer="1"/>
+<wire x1="24.0602" y1="17.9954" x2="24" y2="17.9954" width="0.15" layer="1"/>
+<wire x1="24" y1="17.9954" x2="24" y2="20.2" width="0.15" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$3" pad="P$57"/>
@@ -5027,7 +5060,7 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="P$45"/>
 <contactref element="U9" pad="3"/>
 <contactref element="R18" pad="1"/>
-<contactref element="BATTERY" pad="3"/>
+<contactref element="BATTERYPLUG" pad="3"/>
 <wire x1="16.5" y1="9.85" x2="15.9" y2="9.85" width="0.254" layer="16"/>
 <wire x1="18.9" y1="9.85" x2="18.3" y2="9.85" width="0.254" layer="16"/>
 <wire x1="21.3" y1="9.85" x2="20.7" y2="9.85" width="0.254" layer="16"/>
@@ -5681,16 +5714,11 @@ design rules under a new name.</description>
 <wire x1="27.1" y1="27.614" x2="26.584" y2="28.13" width="0.254" layer="16"/>
 </signal>
 <signal name="BATTERY">
-<contactref element="U7" pad="6"/>
-<contactref element="R5" pad="1"/>
 <contactref element="U6" pad="7"/>
 <contactref element="U6" pad="6"/>
 <contactref element="U6" pad="8"/>
 <contactref element="U6" pad="5"/>
 <contactref element="C9" pad="2"/>
-<wire x1="24.0602" y1="17.9954" x2="24.1" y2="17.9954" width="0.254" layer="1"/>
-<wire x1="24.0602" y1="17.9954" x2="24" y2="17.9954" width="0.254" layer="1"/>
-<wire x1="24" y1="17.9954" x2="24" y2="20.2" width="0.254" layer="1"/>
 <wire x1="28.5906" y1="26.8732" x2="28.108" y2="26.8732" width="0.254" layer="1"/>
 <wire x1="28.108" y1="26.8732" x2="27.6" y2="26.8732" width="0.254" layer="1"/>
 <wire x1="28.5906" y1="26.8732" x2="29.64" y2="27.9226" width="0.254" layer="1"/>
@@ -5705,7 +5733,6 @@ design rules under a new name.</description>
 <wire x1="29.3" y1="21.8" x2="28.9" y2="21.4" width="0.254" layer="1"/>
 <wire x1="26.5" y1="21.5" x2="24.4" y2="21.5" width="0.254" layer="1"/>
 <wire x1="24.4" y1="21.5" x2="24" y2="21.1" width="0.254" layer="1"/>
-<wire x1="24" y1="21.1" x2="24" y2="20.2" width="0.254" layer="1"/>
 <wire x1="28.9" y1="21.4" x2="27.9" y2="21.4" width="0.254" layer="1"/>
 <wire x1="28.5906" y1="23.9268" x2="28.9268" y2="23.9268" width="0.254" layer="1"/>
 <wire x1="28.9268" y1="23.9268" x2="29.2" y2="24.2" width="0.254" layer="1"/>
@@ -5713,6 +5740,8 @@ design rules under a new name.</description>
 <wire x1="26.5" y1="21.5" x2="27" y2="21" width="0.254" layer="1"/>
 <wire x1="27" y1="21" x2="27.5" y2="21" width="0.254" layer="1"/>
 <wire x1="27.5" y1="21" x2="27.9" y2="21.4" width="0.254" layer="1"/>
+<contactref element="U7" pad="1"/>
+<wire x1="24.0602" y1="15.4046" x2="24" y2="21.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UNPROTECTED3V3">
 <contactref element="U6" pad="10"/>
@@ -6055,7 +6084,7 @@ design rules under a new name.</description>
 <signal name="N$34">
 <contactref element="U9" pad="10"/>
 <contactref element="SWITCH" pad="1"/>
-<contactref element="BATTERY" pad="1"/>
+<contactref element="BATTERYPLUG" pad="1"/>
 <wire x1="36" y1="5.5" x2="34" y2="5.5" width="0.254" layer="1"/>
 <wire x1="34" y1="5.5" x2="33.6" y2="5.9" width="0.254" layer="1"/>
 <wire x1="33.6" y1="5.9" x2="33.6" y2="8" width="0.254" layer="1"/>
@@ -6079,7 +6108,7 @@ design rules under a new name.</description>
 <wire x1="38.3" y1="6.6" x2="36.6" y2="6.6" width="0.254" layer="16"/>
 </signal>
 <signal name="N$35">
-<contactref element="BATTERY" pad="2"/>
+<contactref element="BATTERYPLUG" pad="2"/>
 <contactref element="U9" pad="5"/>
 <contactref element="R19" pad="2"/>
 <wire x1="40.2" y1="10" x2="38.6" y2="10" width="0.254" layer="1"/>
@@ -6192,13 +6221,13 @@ design rules under a new name.</description>
 <approved hash="5,1,92063036342e927e"/>
 <approved hash="5,1,4261f459f0714389"/>
 <approved hash="5,1,4265f445f06d438d"/>
-<approved hash="5,1,f61a142211caf632"/>
 <approved hash="5,1,f606142611cef62e"/>
+<approved hash="5,1,f61a142211caf632"/>
 <approved hash="5,1,7e0a183a1c437e13"/>
-<approved hash="5,1,921a343a301293f2"/>
 <approved hash="5,1,921e3426300e93f6"/>
-<approved hash="5,1,fe061c2619cefe2e"/>
+<approved hash="5,1,921a343a301293f2"/>
 <approved hash="5,1,fe1a1c2219cafe32"/>
+<approved hash="5,1,fe061c2619cefe2e"/>
 <approved hash="5,1,d21e7426700ed3f6"/>
 <approved hash="5,1,461a142211ca4632"/>
 <approved hash="5,1,9acac4309ec3ab19"/>
@@ -6206,13 +6235,13 @@ design rules under a new name.</description>
 <approved hash="5,1,9e1a2c2229ca9e32"/>
 <approved hash="5,1,421a143a101243f2"/>
 <approved hash="5,1,421e1426100e43f6"/>
-<approved hash="5,1,50f2b79e1b1c7601"/>
-<approved hash="5,1,6c4a593017eb5d97"/>
 <approved hash="5,1,5036b02adcb1b6dc"/>
 <approved hash="5,1,2bf91e87d05c9a24"/>
+<approved hash="5,1,50f2b79e1b1c7601"/>
+<approved hash="5,1,6c4a593017eb5d97"/>
 <approved hash="5,1,d61a742271cad632"/>
-<approved hash="5,1,f21e1426100ef3f6"/>
 <approved hash="5,1,f21a143a1012f3f2"/>
+<approved hash="5,1,f21e1426100ef3f6"/>
 <approved hash="5,1,9e1a3c2239ca9e32"/>
 <approved hash="5,1,f21e1426100ef3f6"/>
 <approved hash="5,1,c3f2b7af6fad9582"/>
@@ -6233,8 +6262,8 @@ design rules under a new name.</description>
 <approved hash="5,1,14176395d55d5959"/>
 <approved hash="5,1,11084c1e10676d1a"/>
 <approved hash="5,1,dd0400f13ec3653a"/>
-<approved hash="5,1,ad6a774cc95e9519"/>
 <approved hash="5,1,9b7fc1217f32a36d"/>
+<approved hash="5,1,ad6a774cc95e9519"/>
 <approved hash="5,1,1d176a9cbb943799"/>
 <approved hash="5,1,40c11d57412e3cd3"/>
 <approved hash="5,1,40c11b57e345bed3"/>

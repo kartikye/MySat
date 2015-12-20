@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -292,6 +292,8 @@ by exp-lbrs.ulp</description>
 <smd name="P$60" x="-8.7" y="-2.85" dx="0.35" dy="1.7" layer="1"/>
 <text x="-8.89" y="-0.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="2.01" y="-0.5" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="-11.1" y="1.8" drill="1.1"/>
+<hole x="11.1" y="1.8" drill="0.7"/>
 </package>
 <package name="FX8C-060P-SV(92)">
 <circle x="-11.1" y="-1.5" radius="0.55" width="0" layer="45"/>
@@ -361,8 +363,12 @@ by exp-lbrs.ulp</description>
 <smd name="P$58" x="-7.5" y="2.225" dx="2.45" dy="0.35" layer="1" rot="R90"/>
 <smd name="P$59" x="-8.1" y="2.225" dx="2.45" dy="0.35" layer="1" rot="R90"/>
 <smd name="P$60" x="-8.7" y="2.225" dx="2.45" dy="0.35" layer="1" rot="R90"/>
-<text x="-11.2" y="-0.6" size="0.762" layer="25">&gt;NAME</text>
+<text x="-6.8" y="-0.3" size="0.762" layer="25">&gt;NAME</text>
 <text x="1.5" y="-0.3" size="0.762" layer="27">&gt;VALUE</text>
+<wire x1="3.9025" y1="3.1525" x2="3.9" y2="3.15" width="0.254" layer="16" curve="-90"/>
+<wire x1="-2.4975" y1="11.3525" x2="-2.5" y2="11.35" width="0.254" layer="16" curve="-90"/>
+<hole x="-11.1" y="-1.5" drill="1.1"/>
+<hole x="11.1" y="-1.5" drill="0.7"/>
 </package>
 </packages>
 <symbols>
