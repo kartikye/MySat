@@ -7806,73 +7806,73 @@ by exp-lbrs.ulp</description>
 <part name="U10" library="PCA9534PW" deviceset="PCA9534PW" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
-<part name="C17" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C17" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
-<part name="C18" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C18" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="U8" library="TPS2552" deviceset="DRV" device=""/>
 <part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
-<part name="C25" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C25" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
-<part name="C26" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C26" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="U17" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C27" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C27" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
-<part name="C28" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C28" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND66" library="supply1" deviceset="GND" device=""/>
 <part name="R31" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R30" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="U14" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C19" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C19" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
-<part name="C29" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C29" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND67" library="supply1" deviceset="GND" device=""/>
 <part name="R24" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R25" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="U11" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C24" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C24" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
-<part name="C30" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C30" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="U18" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C31" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C31" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
 <part name="GND70" library="supply1" deviceset="GND" device=""/>
 <part name="GND71" library="supply1" deviceset="GND" device=""/>
-<part name="C32" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C32" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
 <part name="R32" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R33" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="U12" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C20" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C20" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
-<part name="C23" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C23" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
 <part name="R20" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R21" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>
 <part name="U15" library="TPS2552" deviceset="DRV" device=""/>
-<part name="C33" library="adafruit" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="C33" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND56" library="supply1" deviceset="GND" device=""/>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
 <part name="GND73" library="supply1" deviceset="GND" device=""/>
-<part name="C34" library="adafruit" deviceset="C-US" device="C0805" value=".1uF"/>
+<part name="C34" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="GND74" library="supply1" deviceset="GND" device=""/>
 <part name="R26" library="adafruit" deviceset="R-US_" device="R0805" value="35.7k"/>
 <part name="R27" library="adafruit" deviceset="R-US_" device="R0805" value="100k"/>

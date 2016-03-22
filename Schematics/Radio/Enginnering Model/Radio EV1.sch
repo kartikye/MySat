@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2736,7 +2736,7 @@ With round pins</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SDN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDN"/>
 <wire x1="5.08" y1="-20.32" x2="-10.16" y2="-20.32" width="0.1524" layer="91"/>
@@ -2745,7 +2745,7 @@ With round pins</description>
 <wire x1="-10.16" y1="-25.4" x2="-25.4" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="NIRQ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="NIRQ"/>
 <wire x1="5.08" y1="-25.4" x2="-5.08" y2="-25.4" width="0.1524" layer="91"/>
@@ -2754,7 +2754,7 @@ With round pins</description>
 <wire x1="-5.08" y1="-22.86" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="NSEL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="NSEL"/>
 <wire x1="5.08" y1="-30.48" x2="-17.78" y2="-30.48" width="0.1524" layer="91"/>
@@ -2763,7 +2763,7 @@ With round pins</description>
 <wire x1="-17.78" y1="-20.32" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SCLK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCLK"/>
 <wire x1="35.56" y1="-35.56" x2="38.1" y2="-35.56" width="0.1524" layer="91"/>
@@ -2774,7 +2774,7 @@ With round pins</description>
 <wire x1="-15.24" y1="-17.78" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SDI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDI"/>
 <wire x1="35.56" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
@@ -2785,7 +2785,7 @@ With round pins</description>
 <wire x1="-12.7" y1="-15.24" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SDO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDO"/>
 <wire x1="35.56" y1="-25.4" x2="43.18" y2="-25.4" width="0.1524" layer="91"/>
@@ -2796,7 +2796,7 @@ With round pins</description>
 <wire x1="-7.62" y1="-12.7" x2="-25.4" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="GPIO1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO1"/>
 <wire x1="35.56" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
@@ -2814,7 +2814,7 @@ With round pins</description>
 <wire x1="35.56" y1="0" x2="50.8" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-3.81" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>

@@ -138,11 +138,16 @@
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="3" y1="0" x2="39" y2="0" width="0" layer="20"/>
 <wire x1="39" y1="0" x2="42" y2="3" width="0" layer="20" curve="90"/>
-<text x="15.4" y="18.6" size="2.54" layer="29">kartikye.com</text>
-<text x="6.1" y="39.7" size="1.27" layer="29">kartikye.com</text>
+<text x="21" y="16.5" size="1.778" layer="22" rot="MR0" align="center">simplesapcesystems.com</text>
+<text x="6.1" y="39.7" size="1.27" layer="29">S^3</text>
 <text x="6.1" y="38.1" size="1.27" layer="29">Radio FV1</text>
-<text x="36.2" y="0.3" size="1.27" layer="22" rot="MR0">Radio FV1</text>
-<text x="21" y="27" size="2.1844" layer="21" align="center">Radio Goes Here</text>
+<text x="21" y="27.5" size="2.54" layer="22" rot="MR0" align="center">Radio FV1</text>
+<text x="21" y="24.1" size="2.1844" layer="21" align="center">Radio Goes Here</text>
+<text x="0.8" y="7" size="1.778" layer="21">+</text>
+<text x="0.8" y="8.7" size="1.778" layer="21">-</text>
+<text x="1.6" y="5.9" size="0.8128" layer="21">47uF</text>
+<text x="5.4" y="5.9" size="0.8128" layer="21">0.1uF</text>
+<text x="21" y="21" size="5.08" layer="22" rot="MR0" align="center">S^3</text>
 </plain>
 <libraries>
 <library name="PQ60">

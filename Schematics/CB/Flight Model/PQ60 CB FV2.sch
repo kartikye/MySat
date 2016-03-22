@@ -15492,7 +15492,7 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <wire x1="58.42" y1="388.62" x2="58.42" y2="391.16" width="0.1524" layer="91"/>
 <junction x="58.42" y="391.16"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="388.62" x2="68.58" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="391.16" x2="68.58" y2="388.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
@@ -15617,7 +15617,6 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <wire x1="58.42" y1="378.46" x2="55.88" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="381" x2="58.42" y2="378.46" width="0.1524" layer="91"/>
 <junction x="58.42" y="378.46"/>
-<wire x1="68.58" y1="388.62" x2="68.58" y2="381" width="0.1524" layer="91"/>
 <junction x="68.58" y="378.46"/>
 <pinref part="U2" gate="G$1" pin="VDD_IO"/>
 <wire x1="68.58" y1="381" x2="68.58" y2="378.46" width="0.1524" layer="91"/>
@@ -15635,7 +15634,6 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <wire x1="101.6" y1="370.84" x2="104.14" y2="370.84" width="0.1524" layer="91"/>
 <junction x="104.14" y="370.84"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<junction x="68.58" y="381"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -16472,6 +16470,7 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <approved hash="104,1,109.22,86.36,U$3,RTN_+3V3,GND,,,"/>
 <approved hash="104,1,109.22,88.9,U$3,RTN_+3V3,GND,,,"/>
 <approved hash="104,1,109.22,91.44,U$3,RTN_+3V3,GND,,,"/>
+<approved hash="106,1,177.8,160.02,N$14,,,,,"/>
 <approved hash="113,1,279.296,215.796,FRAME2,,,,,"/>
 </errors>
 </schematic>
